@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'app/views/pages/initialPage/initialPage.dart';
+import 'app/views/pages/watchPages/mainMenuWatchPage/page/main_menu_watch_page.dart';
 import 'app/views/stylePages/app_colors.dart';
 
 class App extends StatelessWidget {
@@ -27,7 +27,7 @@ class App extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         getPages: [
-          GetPage(name: "/initialPage", page: () => const InitialPage()),
+          GetPage(name: "/initialPage", page: () => const MainMenuWatchPage()),
         ],
         initialRoute: "/initialPage",
       );
